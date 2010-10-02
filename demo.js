@@ -1,10 +1,10 @@
 var sys = require("sys");
 var pg = require("./lib/postgres-pure");
-pg.DEBUG=1;
+pg.DEBUG=0;
 
 //var db = new pg.connect("pgsql://test:12345@localhost:5432/template1");
 console.log("hi1");
-var db = new pg.connect("pgsql://amino:1@localhost:5432/template1");
+var db = new pg.connect("pgsql://amino:1@localhost:5432/aminodb");
 console.log("hi2");
 db.query("SELECT * FROM test5", function (rs, tx) {
 console.log("hi3");
