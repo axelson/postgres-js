@@ -44,3 +44,8 @@ All code is available under the terms of the MIT license, unless otherwise noted
         sys.p(d);
         db.close();
     });
+
+## Example Demo
+
+The demo.js file contains a simple example of working with postgres-js. There is also an associated demo.sh that will run demo.sql to create
+a simple table for the demo.
